@@ -1,0 +1,30 @@
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+.title {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInSlide 0.8s ease-out forwards;
+}
+
+.text {
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(-5px);
+  animation: fadeInSlide 1s ease-out forwards 0.3s;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,6 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #20033b;
+}
